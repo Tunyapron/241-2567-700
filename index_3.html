@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .button {
+            background-color: palevioletred;
+            border: 0;
+            padding: 10px;
+        }
+        .button:hover { /* เอา cursor ไปวางเปลี่ยนสี */
+            background-color: plum;
+        }
+        .button:active { /* click ค้าง/ไม่ค้างก็ได้ สีเปลี่ยน */
+            background-color: peachpuff;
+        }
+        .button:focus { /* click 1 ครั้ง เปลี่ยนสี*/
+            background-color: paleturquoise;
+        }
+        input:focus { /* click ช่องจะ input สี  เข้าไป*/
+            background-color: palegreen;
+        }
+
+        .container .item:first-child {  /* การเข้าถึง item ตัวแรก*/
+            background-color: paleturquoise;
+        }
+        .container .item:nth-child(2) { /* การเข้าถึง item ตัวตรงกลาง การใส่เลขคือเลือกได้ว่าจะเอาตัวไหน*/
+            background-color: papayawhip;
+        }
+        .container .item:last-child { /* การเข้าถึง item ตัวท้ายสุด*/
+            background-color: palegoldenrod;
+        }
+
+    </style>
+</head>
+<body>
+    <!-- :hover = วาง active = click focus = cursor (คลิกปุ๊บเปลี่ยนสีปั๊บ) -->
+        <input type="text">
+        <button class="button">Button</button>
+
+    <div class="container">
+        <div class="item">1</div>
+        <div class="item">2</div>
+        <div class="item">3</div>
+        <div class="item">4</div>
+        <div class="item">5</div>
+    </div>
+</body>
+</html>

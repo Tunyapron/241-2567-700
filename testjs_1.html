@@ -1,0 +1,152 @@
+<!-- โค้ดต้นคาบจาก testjs -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- การเข้าถึง value -->
+    <!-- ชื่อ <input 
+    id="firstname" 
+    class="input"
+    type="text" 
+    name="firstname" 
+    value="Joness"> -->
+
+    <!-- ## -->
+    <!-- ชื่อ <input 
+    type="text" 
+    name="firstname" 
+    value="Joness"> -->
+
+    <!-- นามสกุล <input 
+    id="lastname" 
+    class="input"
+    type="text" 
+    name="lastname" 
+    value="Doe">  -->
+    <!-- -------------------------------------------------------------------
+    <div>Hello World</div>
+    ความสนใจ
+    <input type="checkbox" name="interest" value="อ่านหนังสือ"> อ่านหนังสือ
+    <input type="checkbox" name="interest" value="ดูหนัง"> ดูหนัง
+    <input type="checkbox" name="interest" value="เล่นเกมส์"> เล่นเกมส์ -->
+   
+    <!-- checkbox อ่านหนังสือ -->
+    <!-- <div>Hello World</div>
+    ความสนใจ
+    <input type="checkbox" name="interest" value="อ่านหนังสือ"> อ่านหนังสือ
+    <input type="checkbox" name="interest" value="ดูหนัง"> ดูหนัง
+    <input type="checkbox" name="interest" value="เล่นเกมส์"> เล่นเกมส์ -->
+
+    <!-- radio ชาย หญิง อื่นๆ -->
+    <!-- ถ้าใส่ checked จะเริ่มที่ตัวแปรนั้นก่อน อย่างอันนี้จะกดที่ หญิง -->
+    <!-- <input type="radio" name="gender" value="ชาย" onchange="ChangeGender()"> ชาย -->
+    <!-- <input type="radio" name="gender" value="หญิง" onchange="ChangeGender()" checked=""> หญิง -->
+    <!-- <input type="radio" name="gender" value="หญิง" onchange="ChangeGender()"> หญิง
+    <input type="radio" name="gender" value="อื่นๆ" onchange="ChangeGender()"> อื่นๆ -->
+
+<!-- การสร้างปุ่ม click  -->
+<!-- <button onclick="userClick()">Click me</button>
+<div onclick="userClickdiv()">div Click</div> -->
+
+<!-- การใช้ onkeydown เมื่อ user กดปุ่ม -->
+ <!-- การใช้ onkeyup เมื่อ user กดปล่อยปุ่ม -->
+    <!-- ชื่อ <input type="text" name="firstname" onkeydown="changeFirstName()"> -->
+
+    <!-- การใช้ mouseover เมื่อ user เอา mouse มาวาง -->
+     <!-- <div 
+     onmouseover="overitem()"
+     onmouseup="upitem()"
+     onmousedown="downitem()"
+     > click here</div> -->
+
+     <!-- การใช้ innerText และ textContent และ innerHTML -->
+     <!-- <div id="hello">hello <span style="display: none;">naa</span></div> -->
+     <script>
+        // การเข้าถึง value 
+     /* 1.ต้องการเข้าถึงค่า value โดยใช้ getElementById ประกาศ id ไว้ */
+        // let firstnameDOM = document.getElementById('firstname');
+        // console.log(firstnameDOM.value);
+
+        // /* 2.ต้องการเข้าถึงค่า value โดยใช้ getElementsByClassName ประกาศ class ไว้ */
+        // /* เรียกตัวแปร ด้วยการใช้ for วน loop ออกมา */
+        // let inputDOM = document.getElementsByClassName('input');
+        // for (let i = 0; i <script inputDOM.length; i++) {
+        //     console.log(inputDOM[i].value);
+        // }
+        // /* 3.ใช้ querySelector เหมือนกับ getElementById ผ่านตัว id โดยใช้ #____ */
+        //  let firstnameDOM = document.querySelector('#firstname');
+        //  console.log(firstnameDOM.value);
+
+        // /* ## ดึงค่า input ตรงๆเลย แล้วก็ .value ออกมา */
+        //  let firstnameDOM = document.querySelector('input[name="firstname"]');
+        //  console.log(firstnameDOM.value);
+        //  -------------------------------------------------------------------
+        //  let checkboxInputs = document.querySelectorAll('input[type="checkbox"]');
+        //     for (let i = 0; i < checkboxInputs.length; i++) {
+        //         console.log(checkboxInputs[i].value);
+        //  }
+
+        //  // การใช้ innerText และ textContent และ innerHTML
+        // let helloDOM = document.getElementById('hello');
+        // console.log(helloDOM.innerText); // แสดงข้อความที่ เห็น เท่านั้น
+        // console.log(helloDOM.textContent); // แสดงข้อความทั้งหมด
+        // console.log(helloDOM.innerHTML); // แสดงข้อความทั้งหมด และ tag ด้วย
+        // -------------------------------------------------------------------
+        // การใช้ mouseover เมื่อ user เอา mouse มาวาง
+        // function overitem() {
+        //     console.log('mouse over'); // เอา mouse มาวาง
+        // }
+        // function upitem() {
+        //     console.log('mouse up'); // เอา mouse กดลงไป
+        // }
+        // function downitem() {
+        //     console.log('mouse down'); // ปล่อย mouse 
+        // }
+        // -------------------------------------------------------------------
+        //การใช้ onkeydown เมื่อ user กดปุ่ม
+        // function changeFirstName() {
+        //     // เลือกไปยัง input firstname
+        //     let firstnameDOM = document.querySelector('input[name="firstname"]');
+        //     // เอา value ของ firstname ออกมา ถ้ากดปุ่มใดๆ ให้แสดงค่าที่กด
+        //     console.log('change firstname',firstnameDOM.value);
+        // }
+        // -------------------------------------------------------------------
+        // radio ชาย หญิง อื่นๆ
+        // function ChangeGender() {
+        //     console.log('ChangeGender');
+        // }
+        // function ChangeGender(){
+        //     // เลือก gender ทุก input ออกมา
+        //     let genderInputs = document.querySelectorAll('input[name=gender]');
+        //     let gender = '';
+        //     // ใครมี checked คือเพศนั้นถูกเลือก ให้เอา value ออกมา
+        //     for (let i = 0; i < genderInputs.length; i++) {
+        //         if (genderInputs[i].checked) {
+        //            gender = genderInputs[i].value
+        //         }
+        //     }
+        //     console.log('select gender',gender);
+        // }
+
+        // -------------------------------------------------------------------
+        // checkbox อ่านหนังสือ 
+        // let checkboxInputs = document.querySelectorAll('input[type="checkbox"]');
+        //     for (let i = 0; i < checkboxInputs.length; i++) {
+        //         console.log(checkboxInputs[i].value);
+        //  }
+
+        // -------------------------------------------------------------------
+        // การสร้างปุ่ม click  
+        // function userClick() {
+        //     console.log('button click');
+        // }
+        // function userClickdiv() {
+        //     console.log('div Click');
+        // }
+    </script> 
+</body>
+</html>

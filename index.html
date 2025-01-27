@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!--ส่วนนี้ไม่แสดงออกไปที่หน้าจอของ browser -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <!--ส่วนนี้แสดงออกไปที่หน้าจอของ browser -->
+    Hello World!! <br>  <!--br คือคำสั่งการขึ้นบรรทัดใหม่-->
+    <!-- 1.html content -->
+     <h1>เรียน HTML</h1> <!--font ขนาดใหญ่-->
+     <h2>เรียน CSS</h2>
+     <h3>เรียน Javascript</h3>
+     <h4>เรียน PHP</h4>
+     <h5>เรียน MySQL</h5>
+     <h6>เรียน Bootstrap</h6>
+     <p>
+        เรียน HTML
+     </p>
+     <ul>
+        <!-- ul มีจุดข้างหน้า -->
+        <li>HTML</li>
+        <li>CSS</li>
+        <li>Javascript</li>
+        <li>PHP</li>
+        <li>MySQL</li>
+        <li>Bootstrap</li>
+     </ul>
+     <ol>
+        <!-- ol มีเลขข้างหน้า -->
+        <li>HTML</li>
+        <li>CSS</li>
+        <li>Javascript</li>
+        <li>PHP</li>
+        <li>MySQL</li>
+        <li>Bootstrap</li>
+     </ol>
+     <!--ตาราง-->
+     <table>
+         <!-- tr = row -->
+         <!-- th = column -->
+        <thead> <!--เป็นหัวข้อคอลัมตัวหนา-->
+            <tr>
+                <th>หัวข้อ 1</th>
+                <th>หัวข้อ 2</th>
+                <th>หัวข้อ 3</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>แถวที่ 1</td>
+                <td>แถวที่ 2</td>
+                <td>แถวที่ 3</td>
+            </tr>
+        </tbody>
+      </table>
+
+<a href="https://www.google.co.th/?hl=th" target="_blank">
+    Google
+</a>
+<img src="https://fastly.picsum.photos/id/18/2500/1667.jpg?hmac=JR0Z_jRs9rssQHZJ4b7xKF82kOj8-4Ackq75D_9Wmz8"
+width="100px"
+height="100px"
+>
+</body>
+</html>
+
+     /* top, bottom, left, right*/
+        .relative { /*การผลัก*/
+            position: relative;
+            left: 20px;
+        }
+        .absolute { /*การฟิกตำแหน่ง*/
+            position: absolute;
+            top: 0px;
+            right: 0px;
+        }
+        .fixed { /*อยู่ที่เดิมยาวๆ ยึดอยู่กับที่*/
+            position: fixed;
+            top: 0px;
+            right: 0px;
+        }
+        .sticky { /*ขยับเมื่อมี form มาปะทะ จะขยับขึ้นไปข้างบน*/
+            position: sticky;
+            top: 50px;
+        }
+        .container {
+            height: 1800px;
+        }
+
+        .left {
+            float: left;
+        }
+        .right {
+            float: right;
+        }
+
+        .image {
+            background-image: url('https://picsum.photos/200/300?grayscale');
+            height: 200px;
+            width: 100px;
+            background-size: contain;
+            background-position: top left;
+            background-repeat: no-repeat;
+        }
+
+        <!-- <div class="container">
+        <div>Static</div> 
+        <div class="relative">Relative</div> 
+        <div class="absolute">Absolute</div> 
+        <div class="fixed">Fixed</div> 
+        <div class="sticky">Sticky</div> 
+     </div> -->

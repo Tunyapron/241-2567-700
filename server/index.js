@@ -50,41 +50,6 @@ const validateData = (userData) => {
   return errors
 }
 
-// app.get('/testdb', (req, res) => {
-//   mysql.createConnection({
-//     host: 'localhost',
-//     user: 'root',
-//     password: 'root',
-//     database: 'webdb',
-//     port: 8830
-
-//   }).then((conn) => {
-//     conn
-//     .query('SELECT * FROM users')
-//     .then((result) => {
-//       res.json(result[0])
-
-//     })
-//     .catch((error) => {
-//       console.log('error', error.message)
-//       res.status(500).json({error: 'Error fetching users'})
-//     })
-//   })
-// })
-
-
-// app.get('/testdbnew',async (req, res) => {
-//   try {
-
-//     const result = await conn.query('SELECT * FROM users')
-//     res.json(result[0])
-
-//   } catch (error) {
-//     console.log('error', error.message)
-//     res.status(500).json({error: 'Error fetching users'})
-//   }
-
-// })
 
 /*
 GET /users สำหรับ get users ทั้งหมดที่บันทึกไว้

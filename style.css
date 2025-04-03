@@ -34,6 +34,18 @@ body {
     width: 140px;
 }
 
+.register-header { // หัวข้อ
+    border: 2px solid rgb(242, 248, 84); 
+    background-color:rgb(244, 246, 193); 
+    padding: 10px 20px;
+    border-radius: 8px;
+    width: 50%;
+    margin: 20px auto;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1); /* เพิ่มเงาให้กับส่วนของ header */  
+    text-align: center;
+    font-size: 24px;
+}
+
 .flex{
     display: flex;
     margin-bottom: 10px;
